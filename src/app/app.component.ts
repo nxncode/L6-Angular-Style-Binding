@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'style-binding';
+  hasError : boolean = false;
+  styleArray = ['errorClass', 'boldClass'];
+  styleObject = {
+    'errorClass': false,
+    'boldClass':true,
+    'italicsClass':true,
+    'greenClass':true
+  }
+
+  getGreenClass(){
+    return 'greenClass';
+  }
+  
 }
